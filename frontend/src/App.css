@@ -1,0 +1,20 @@
+:root {
+    --standard-background: #2c2e31;
+}
+
+.app {
+    height: 100vh;
+    text-align: left;
+    font-size: 16px;
+    color: white;
+    background-color: var(--standard-background);
+    overflow: auto;
+}
+
+.app-header {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--standard-background);
+}
