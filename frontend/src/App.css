@@ -1,5 +1,7 @@
 :root {
     --standard-background: #2c2e31;
+    --blue-accent: rgb(81, 174, 255);
+    --standard-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .app {
@@ -17,4 +19,62 @@
     flex-direction: column;
     align-items: center;
     background-color: var(--standard-background);
+}
+
+.navbar {
+    padding: 5px 148px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(9, 11, 28, 0.75);
+    box-shadow: var(--standard-shadow);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+.nav-text-button {
+    padding: 6px;
+    margin: 0;
+    position: relative;
+    color: white;
+    background-color: transparent;
+    height: 56px;
+    width: fit-content;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    align-content: center;
+    justify-content: center;
+    width: 128px;
+    overflow: hidden;
+}
+
+.nav-text-button:hover {
+    color: var(--blue-accent);
+}
+
+.nav-logo-button {
+    position: relative;
+    background-color: transparent;
+    padding: 6px;
+    margin: 0;
+    border: none;
+    cursor: pointer;
+    align-content: center;
+    justify-content: center;
+}
+
+.logo {
+    height: 54px;
+    width: fit-content;
+    object-fit: contain;
 }
