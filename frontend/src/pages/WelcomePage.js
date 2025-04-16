@@ -9,6 +9,9 @@ function WelcomePage() {
             <div className="welcome-page-img-container">
                 <img className="welcome-page-img" src={require("../images/welcome-page-img.png")} alt="welcome page image" />
             </div>
+            <div className="welcome-blurb-section">
+                Hello, hello!
+            </div>
         </div>
     );
 }
