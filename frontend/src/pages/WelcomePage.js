@@ -40,6 +40,10 @@ function WelcomePage() {
                 <PurchaseRow optionalClass={isPurchaseRowFixed ? "fixed-purchase-row" : ""} />
             )}
             <div className="decorative-divider" />
+            <div className="game-trailer-section">
+                <img className="game-trailer-mockup" src={require("../images/game-trailer-mockup.png")} alt="game trailer mockup" />
+            </div>
+            <div className="decorative-divider" />
             <div className="welcome-blurb-section">
                 Hello, hello!
             </div>
