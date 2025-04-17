@@ -198,9 +198,9 @@
 }
 
 .back-to-top-button-container {
-    position: sticky;
+    position: fixed;
     bottom: 24px;
-    margin-left: calc(100% - 72px);
+    right: 24px;
 }
 
 .back-to-top-button {
