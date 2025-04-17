@@ -34,10 +34,10 @@ function WelcomePage() {
             </div>
             <div className="welcome-page-img-container">
                 <img className="welcome-page-img" src={require("../images/welcome-page-img.png")} alt="welcome page image" />
-                <PurchaseRow optionalClass={isPurchaseRowFixed ? " hidden-purchase-row" : ""} />
+                <PurchaseRow optionalClass={isPurchaseRowFixed ? "hidden-purchase-row" : "standard-purchase-row"} />
             </div>
             {isPurchaseRowFixed && (
-                <PurchaseRow optionalClass={isPurchaseRowFixed ? " fixed-purchase-row" : ""} />
+                <PurchaseRow optionalClass={isPurchaseRowFixed ? "fixed-purchase-row" : ""} />
             )}
             <div className="decorative-divider" />
             <div className="welcome-blurb-section">

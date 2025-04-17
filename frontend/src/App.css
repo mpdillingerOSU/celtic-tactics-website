@@ -161,12 +161,15 @@
     box-sizing: border-box;
     font-size: 16px;
     font-weight: 700;
-    color: white;
-    background-color: rgba(9, 11, 28, 0.75);
     box-shadow: var(--standard-shadow);
 }
 
-.purchase-button:hover {
+.standard-purchase-row .purchase-button {
+    color: white;
+    background-color: rgba(9, 11, 28, 0.75);
+}
+
+.standard-purchase-row .purchase-button:hover {
     color: rgb(43, 179, 130);
     background-color: rgb(9, 11, 28);
     outline: solid 2px rgba(55, 236, 146, 0.2);
