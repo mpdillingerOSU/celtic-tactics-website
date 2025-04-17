@@ -1,6 +1,6 @@
 :root {
     --standard-background: #2c2e31;
-    --blue-accent: rgb(81, 174, 255);
+    --green-accent: rgb(43, 179, 130);
     --standard-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -60,7 +60,7 @@
 }
 
 .nav-text-button:hover {
-    color: var(--blue-accent);
+    color: var(--green-accent);
 }
 
 .nav-logo-button {
@@ -170,7 +170,7 @@
 }
 
 .standard-purchase-row .purchase-button:hover {
-    color: rgb(43, 179, 130);
+    color: var(--green-accent);
     background-color: rgb(9, 11, 28);
     outline: solid 2px rgba(55, 236, 146, 0.2);
     box-shadow: 0 0 4px 4px rgba(55, 236, 146, 0.2);
@@ -178,7 +178,7 @@
 
 .fixed-purchase-row .purchase-button {
     color: white;
-    background-color: rgb(43, 179, 130);
+    background-color: var(--green-accent);
 }
 
 .fixed-purchase-row .purchase-button:hover {
