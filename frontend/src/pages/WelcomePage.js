@@ -41,6 +41,7 @@ function WelcomePage() {
             )}
             <div className="decorative-divider" />
             <div className="game-trailer-section">
+                <div className="game-trailer-header">DISCOVER ANCIENT LANDS AND BATTLE MONSTERS OF CELTIC LORE</div>
                 <img className="game-trailer-mockup" src={require("../images/game-trailer-mockup.png")} alt="game trailer mockup" />
             </div>
             <div className="decorative-divider" />
