@@ -197,6 +197,33 @@
     width: fit-content;
 }
 
+.back-to-top-button-container {
+    position: sticky;
+    bottom: 24px;
+    margin-left: calc(100% - 72px);
+}
+
+.back-to-top-button {
+    width: 48px;
+    height: 48px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 10;
+    background-color: rgba(9, 11, 28, 0.75);
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+}
+
 .decorative-divider {
     background-image: url("images/decorative-divider.png");
     background-size: contain;
@@ -236,10 +263,4 @@
     object-fit: contain;
     box-shadow: var(--standard-shadow);
     cursor: pointer;
-}
-
-.welcome-blurb-section {
-    width: 100%;
-    height: 1000px;
-    background-color: blue;
 }

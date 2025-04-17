@@ -1,34 +1,49 @@
 import React, { useState } from 'react';
 import PurchaseRow from '../components/PurchaseRow';
+import { FaCaretUp } from 'react-icons/fa';
 
 function WelcomePage() {
     const [isPurchaseRowFixed, setIsPurchaseRowFixed] = useState(false);
+    const [isBackToTopButtonVisible, setIsBackToTopButtonVisible] = useState(false);
 
     function isPurchaseRowOffScreen() {
         const element = document.getElementById("purchase-row");
-        const yVal = element.getBoundingClientRect().y;
-        console.log(yVal);
-        return element !== undefined && yVal < 0;
+        return element !== undefined && element.getBoundingClientRect().y < 0;
+    }
+
+    function isNavBarOffScreen() {
+        const element = document.getElementById("navbar");
+        return element !== undefined && element.getBoundingClientRect().y + element.clientHeight < 0;
+    }
+
+    function checkScrollEvents() {
+        if(isPurchaseRowOffScreen()) {
+            setIsPurchaseRowFixed(true);
+        } else {
+            setIsPurchaseRowFixed(false);
+        }
+
+        if(isNavBarOffScreen()) {
+            setIsBackToTopButtonVisible(true);
+        } else {
+            setIsBackToTopButtonVisible(false);
+        }
     }
         
     window.addEventListener("scroll", function() {
-        if (isPurchaseRowOffScreen()) {
-            setIsPurchaseRowFixed(true);
-        } else {
-            setIsPurchaseRowFixed(false);
-        }
+        checkScrollEvents();
     }, true);
     
     window.addEventListener("resize", function() {
-        if (isPurchaseRowOffScreen()) {
-            setIsPurchaseRowFixed(true);
-        } else {
-            setIsPurchaseRowFixed(false);
-        }
+        checkScrollEvents();
     });
 
+    function backToTop() {
+        document.getElementById("navbar").scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"})
+    }
+
     return (
-        <div>
+        <div id="welcome-page">
             <div className="game-title-container">
                 <img className="game-title" src={require("../images/game-title.png")} alt="game title" />
             </div>
@@ -45,9 +60,13 @@ function WelcomePage() {
                 <img className="game-trailer-mockup" src={require("../images/game-trailer-mockup.png")} alt="game trailer mockup" />
             </div>
             <div className="decorative-divider" />
-            <div className="welcome-blurb-section">
-                Hello, hello!
-            </div>
+            {isBackToTopButtonVisible && (
+                <div className="back-to-top-button-container">
+                    <button className="back-to-top-button" onClick={() => backToTop()}>
+                        <FaCaretUp />
+                    </button>
+                </div>
+            )}
         </div>
     );
 }
