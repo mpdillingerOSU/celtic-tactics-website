@@ -59,6 +59,13 @@ function WelcomePage() {
                 <div className="game-trailer-header">DISCOVER ANCIENT LANDS AND BATTLE MONSTERS OF CELTIC LORE</div>
                 <img className="game-trailer-mockup" src={require("../images/game-trailer-mockup.png")} alt="game trailer mockup" />
             </div>
+            <div className="ost-section">
+                <div className="ost-header">Enjoy our beautiful soundtrack!</div>
+                <img className="ost-mockup" src={require("../images/ost-mockup.png")} alt="ost mockup" />
+                <button className="ost-purchase-button">
+                    SEE MORE
+                </button>
+            </div>
             <div className="decorative-divider" />
             {isBackToTopButtonVisible && (
                 <div className="back-to-top-button-container">
