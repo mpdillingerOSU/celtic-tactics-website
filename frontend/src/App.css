@@ -296,7 +296,7 @@
     box-shadow: var(--standard-shadow);
 }
 
-.ost-purchase-button {
+.see-more-button {
     width: 256px;
     padding: 12px 20px;
     margin: 48px 0 0 0;
@@ -313,11 +313,40 @@
     background-color: var(--green-accent);
 }
 
-.ost-purchase-button:hover {
+.see-more-button:hover {
     color: white;
     background-color: rgb(11, 207, 148);
     outline: solid 2px rgba(55, 236, 146, 0.2);
     box-shadow: 0 0 4px 4px rgba(55, 236, 146, 0.2);
+}
+
+.shop-section {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0 128px 0;
+    background-color: rgb(252, 210, 157);
+}
+
+.shop-header {
+    font-size: 40px;
+    font-weight: 700;
+    color: rgb(148, 75, 19);
+    margin-bottom: 48px;
+    width: 50%;
+    text-align: center;
+    text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.8);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+}
+
+.shop-img {
+    height: 240px;
+    object-fit: contain;
 }
 
 .app-footer {
