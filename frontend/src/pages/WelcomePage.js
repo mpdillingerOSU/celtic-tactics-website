@@ -63,7 +63,7 @@ function WelcomePage() {
                 <div className="ost-header">Enjoy our beautiful soundtrack!</div>
                 <img className="ost-mockup" src={require("../images/ost-mockup.png")} alt="ost mockup" />
                 <button className="see-more-button">
-                    SEE MORE
+                    LISTEN TO MORE
                 </button>
             </div>
             <div className="shop-section">
