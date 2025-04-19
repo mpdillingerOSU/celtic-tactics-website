@@ -62,16 +62,18 @@ function WelcomePage() {
             <div className="ost-section">
                 <div className="ost-header">Enjoy our beautiful soundtrack!</div>
                 <img className="ost-mockup" src={require("../images/ost-mockup.png")} alt="ost mockup" />
-                <button className="see-more-button">
+                <button className="ost-button">
                     LISTEN TO MORE
                 </button>
             </div>
             <div className="shop-section">
                 <div className="shop-header">Checkout our merch!</div>
-                <img className="shop-img" src={require("../images/shop-img.png")} alt="shop image" />
-                <button className="see-more-button">
-                    VISIT STORE
-                </button>
+                <div className="shop-row">
+                    <img className="shop-img" src={require("../images/shop-img.png")} alt="shop image" />
+                    <button className="shop-button">
+                        VISIT STORE
+                    </button>
+                </div>
             </div>
             <div className="decorative-divider" />
             {isBackToTopButtonVisible && (
