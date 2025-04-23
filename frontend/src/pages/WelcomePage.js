@@ -82,6 +82,13 @@ function WelcomePage() {
                         <span>How will you be remembered? As a conqueror who struck down the wilderness around you, and brought an end to nature's grasp on the world? Or as a nurturer whose empire became one with nature, and found a means to live together?</span>
                     </div>
                 </div>
+                <div className="newsletter-section">
+                    <div className="newsletter-header">Newsletter</div>
+                    <div className="newsletter-description">Want to keep yourself up to date with the latest news and updates? Then subscribe to our monthly newsletter, and get all of the information you need in one easy location!</div>
+                    <button className="newsletter-button">
+                        SUBSCRIBE NOW
+                    </button>
+                </div>
                 <div className="ost-section">
                     <div className="ost-header">Enjoy our beautiful soundtrack!</div>
                     <img className="ost-mockup" src={require("../images/ost-mockup.png")} alt="ost mockup" />
