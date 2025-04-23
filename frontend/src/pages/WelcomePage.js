@@ -55,46 +55,48 @@ function WelcomePage() {
                 <PurchaseRow optionalClass={isPurchaseRowFixed ? "fixed-purchase-row" : ""} />
             )}
             <div className="decorative-divider" />
-            <div className="game-trailer-section">
-                <div className="game-trailer-header">DISCOVER ANCIENT LANDS AND BATTLE MONSTERS OF CELTIC LORE</div>
-                <img className="game-trailer-mockup" src={require("../images/game-trailer-mockup.png")} alt="game trailer mockup" />
-            </div>
-            <div className="features-section">
-                <div className="features-description">
-                    <span className="features-lead-text">Strategic Combat: </span>
-                    <span>Enjoy engaging and dynamic tactics-based combat. Choose from a variety of combat classes, lead your troops into battle, and use the environment to your advantage.</span>
+            <div className="main-content">
+                <div className="game-trailer-section">
+                    <div className="game-trailer-header">DISCOVER ANCIENT LANDS AND BATTLE MONSTERS OF CELTIC LORE</div>
+                    <img className="game-trailer-mockup" src={require("../images/game-trailer-mockup.png")} alt="game trailer mockup" />
                 </div>
-                <div className="features-description">
-                    <span className="features-lead-text">From Nomads to Empire: </span>
-                    <span>Lead your group of nomads out of the swamps and build your empire. Upgrade buildings to improve technologies and troops, negotiate with others to establish trade routes and obtain resources, and conquer lands to grow your presence.</span>
+                <div className="features-section">
+                    <div className="features-description">
+                        <span className="features-lead-text">Strategic Combat: </span>
+                        <span>Enjoy engaging and dynamic tactics-based combat. Choose from a variety of combat classes, lead your troops into battle, and use the environment to your advantage.</span>
+                    </div>
+                    <div className="features-description">
+                        <span className="features-lead-text">From Nomads to Empire: </span>
+                        <span>Lead your group of nomads out of the swamps and build your empire. Upgrade buildings to improve technologies and troops, negotiate with others to establish trade routes and obtain resources, and conquer lands to grow your presence.</span>
+                    </div>
+                    <div className="features-description">
+                        <span className="features-lead-text">Engaging Characters: </span>
+                        <span>At the center of your journey are a small band of key players: Tadhg the chief and demi-god, Cormac the hulking military leader, Alastar the arcanist and druid, Moira the builder and explosives expert, and Saoirse the wildcard and jokester.</span>
+                    </div>
+                    <div className="features-description">
+                        <span className="features-lead-text">Emergent Storylines: </span>
+                        <span>While the main cast of characters will remain the same, everything else is up to change. The world and its events cannot be forseen, and the world itself will even react to your very motives and desires.</span>
+                    </div>
+                    <div className="features-description">
+                        <span className="features-lead-text">Conqueror or Nurturer: </span>
+                        <span>How will you be remembered? As a conqueror who struck down the wilderness around you, and brought an end to nature's grasp on the world? Or as a nurturer whose empire became one with nature, and found a means to live together?</span>
+                    </div>
                 </div>
-                <div className="features-description">
-                    <span className="features-lead-text">Engaging Characters: </span>
-                    <span>At the center of your journey are a small band of key players: Tadhg the chief and demi-god, Cormac the hulking military leader, Alastar the arcanist and druid, Moira the builder and explosives expert, and Saoirse the wildcard and jokester.</span>
-                </div>
-                <div className="features-description">
-                    <span className="features-lead-text">Emergent Storylines: </span>
-                    <span>While the main cast of characters will remain the same, everything else is up to change. The world and its events cannot be forseen, and the world itself will even react to your very motives and desires.</span>
-                </div>
-                <div className="features-description">
-                    <span className="features-lead-text">Conqueror or Nurturer: </span>
-                    <span>How will you be remembered? As a conqueror who struck down the wilderness around you, and brought an end to nature's grasp on the world? Or as a nurturer whose empire became one with nature, and found a means to live together?</span>
-                </div>
-            </div>
-            <div className="ost-section">
-                <div className="ost-header">Enjoy our beautiful soundtrack!</div>
-                <img className="ost-mockup" src={require("../images/ost-mockup.png")} alt="ost mockup" />
-                <button className="ost-button">
-                    LISTEN TO MORE
-                </button>
-            </div>
-            <div className="shop-section">
-                <div className="shop-header">Checkout our merch!</div>
-                <div className="shop-row">
-                    <img className="shop-img" src={require("../images/shop-img.png")} alt="shop image" />
-                    <button className="shop-button">
-                        VISIT STORE
+                <div className="ost-section">
+                    <div className="ost-header">Enjoy our beautiful soundtrack!</div>
+                    <img className="ost-mockup" src={require("../images/ost-mockup.png")} alt="ost mockup" />
+                    <button className="ost-button">
+                        LISTEN TO MORE
                     </button>
+                </div>
+                <div className="shop-section">
+                    <div className="shop-header">Checkout our merch!</div>
+                    <div className="shop-row">
+                        <img className="shop-img" src={require("../images/shop-img.png")} alt="shop image" />
+                        <button className="shop-button">
+                            VISIT STORE
+                        </button>
+                    </div>
                 </div>
             </div>
             <div className="decorative-divider" />

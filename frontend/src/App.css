@@ -2,6 +2,7 @@
     --standard-background: #2c2e31;
     --green-accent: rgb(43, 179, 130);
     --darkened-text: rgb(214, 220, 237);
+    --scroll-color: rgb(252, 210, 157);
     --standard-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -234,6 +235,13 @@
     height: 48px;
 }
 
+.main-content {
+    width: 100%;
+    height: fit-content;
+    background-image: url("images/scroll-texture.png");
+    background-repeat: repeat;
+}
+
 .game-trailer-section {
     width: 100%;
     height: fit-content;
@@ -242,7 +250,6 @@
     align-items: center;
     justify-content: center;
     padding: 80px 0 80px 0;
-    background-color: rgb(252, 210, 157);
 }
 
 .game-trailer-header {
@@ -274,7 +281,6 @@
     align-items: center;
     justify-content: center;
     padding: 0 0 64px 0;
-    background-color: rgb(252, 210, 157);
 }
 
 .features-lead-text {
@@ -297,7 +303,6 @@
     align-items: center;
     justify-content: center;
     padding: 0 0 120px 0;
-    background-color: rgb(252, 210, 157);
 }
 
 .ost-header {
@@ -360,7 +365,6 @@
     align-items: center;
     justify-content: center;
     padding: 0 0 128px 0;
-    background-color: rgb(252, 210, 157);
 }
 
 .shop-header {
