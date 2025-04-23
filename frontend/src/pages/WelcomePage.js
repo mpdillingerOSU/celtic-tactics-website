@@ -71,7 +71,7 @@ function WelcomePage() {
                     </div>
                     <div className="features-description">
                         <span className="features-lead-text">Engaging Characters: </span>
-                        <span>At the center of your journey are a small band of key players: Tadhg the chief and demi-god, Cormac the hulking military leader, Alastar the arcanist and druid, Moira the builder and explosives expert, and Saoirse the wildcard and jokester.</span>
+                        <span>At the center of your journey are a small band of key characters: Tadhg the chief and demi-god, Cormac the hulking military leader, Alastar the arcanist and druid, Moira the builder and explosives expert, and Saoirse the wildcard and jokester. Each with their own play styles, personalities, and storylines.</span>
                     </div>
                     <div className="features-description">
                         <span className="features-lead-text">Emergent Storylines: </span>
