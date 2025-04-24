@@ -1,10 +1,19 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import PurchaseRow from '../components/PurchaseRow';
 import { FaCaretUp } from 'react-icons/fa';
+import { RiSwordFill } from "react-icons/ri";
+import { FaCrown } from "react-icons/fa6";
+import { GiBarbute } from "react-icons/gi";
+import { GiFluffyTrefoil } from "react-icons/gi";
+import { FaBalanceScale } from "react-icons/fa";
+import CaretButton from '../components/CaretButton';
 
 function WelcomePage() {
     const [isPurchaseRowFixed, setIsPurchaseRowFixed] = useState(false);
     const [isBackToTopButtonVisible, setIsBackToTopButtonVisible] = useState(false);
+    const [isHoveringFeatureArc, setIsHoveringFeatureArc] = useState(false);
+    const [isHoveringFeatureBuffer, setIsHoveringFeatureBuffer] = useState(false);
+    const [featureSelection, setFeatureSelection] = useState();
 
     function isPurchaseRowOffScreen() {
         const element = document.getElementById("purchase-row");
@@ -42,6 +51,24 @@ function WelcomePage() {
         document.getElementById("navbar").scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"})
     }
 
+    function openFeatureInfo(feature) {
+        setFeatureSelection(feature);
+    }
+
+    function updateFeatureHoverArc(val) {
+        setIsHoveringFeatureArc(val);
+    }
+
+    function updateFeatureHoverBuffer(val) {
+        setIsHoveringFeatureBuffer(val);
+    }
+
+    useEffect(() => {
+        if(!(isHoveringFeatureArc || isHoveringFeatureBuffer)){
+            setFeatureSelection();
+        }
+    }, [isHoveringFeatureArc, isHoveringFeatureBuffer]);
+
     return (
         <div id="welcome-page">
             <div className="game-title-container">
@@ -61,27 +88,88 @@ function WelcomePage() {
                     <img className="game-trailer-mockup" src={require("../images/game-trailer-mockup.png")} alt="game trailer mockup" />
                 </div>
                 <div className="features-section">
-                    <div className="features-description">
-                        <span className="features-lead-text">Strategic Combat: </span>
-                        <span>Enjoy engaging and dynamic tactics-based combat. Choose from a variety of combat classes, lead your troops into battle, and use the environment to your advantage.</span>
+                    <div className="features-header">Features</div>
+                    <div className="feature-arc-container">
+                        <div className="feature-arc" onMouseEnter={(e) => updateFeatureHoverArc(true)} onMouseLeave={(e) => updateFeatureHoverArc(false)}>
+                            <div className={"feature-icon-container" + (featureSelection === "combat" ? " selected-feature" : "")} onMouseEnter={(e) => openFeatureInfo("combat")}>
+                                <div className="feature-icon">
+                                    <RiSwordFill />
+                                </div>
+                            </div>
+                            <div className={"feature-icon-container" + (featureSelection === "village" ? " selected-feature" : "")} onMouseEnter={(e) => openFeatureInfo("village")}>
+                                <div className="feature-icon">
+                                    <FaCrown />
+                                </div>
+                            </div>
+                            <div className={"feature-icon-container" + (featureSelection === "characters" ? " selected-feature" : "")} onMouseEnter={(e) => openFeatureInfo("characters")}>
+                                <div className="feature-icon">
+                                    <GiBarbute />
+                                </div>
+                            </div>
+                            <div className={"feature-icon-container" + (featureSelection === "storylines" ? " selected-feature" : "")} onMouseEnter={(e) => openFeatureInfo("storylines")}>
+                                <div className="feature-icon">
+                                    <GiFluffyTrefoil />
+                                </div>
+                            </div>
+                            <div className={"feature-icon-container" + (featureSelection === "morality" ? " selected-feature" : "")} onMouseEnter={(e) => openFeatureInfo("morality")}>
+                                <div className="feature-icon">
+                                    <FaBalanceScale />
+                                </div>
+                            </div>
+                            <div className="feature-info">
+                                {featureSelection === undefined && (
+                                    <div className="feature-hover-text">Hover over an icon to learn more about a feature</div>
+                                )}
+                                {featureSelection === "combat" && (
+                                    <>
+                                        <div className="feature-description">
+                                            <span className="feature-lead-text">Strategic Combat: </span>
+                                            <span>Enjoy engaging and dynamic tactics-based combat. Choose from a variety of combat classes, lead your troops into battle, and use the environment to your advantage.</span>
+                                        </div>
+                                        <CaretButton text="DISCOVER MORE" />
+                                    </>
+                                )}
+                                {featureSelection === "village" && (
+                                    <>
+                                        <div className="feature-description">
+                                            <span className="feature-lead-text">From Nomads to Empire: </span>
+                                            <span>Lead your group of nomads out of the swamps and build your empire. Upgrade buildings to improve technologies and troops, negotiate with others to establish trade routes and obtain resources, and conquer lands to grow your presence.</span>
+                                        </div>
+                                        <CaretButton text="DISCOVER MORE" />
+                                    </>
+                                )}
+                                {featureSelection === "characters" && (
+                                    <>
+                                        <div className="feature-description">
+                                            <span className="feature-lead-text">Engaging Characters: </span>
+                                            <span>At the center of your journey is a small band of key characters: Tadhg the chief and demi-god, Cormac the hulking military commander, Alastar the arcanist and druid, Moira the builder and explosives expert, and Saoirse the wildcard and jokester. Each with their own play styles, personalities, and storylines.</span>
+                                        </div>
+                                        <CaretButton text="DISCOVER MORE" />
+                                    </>
+                                )}
+                                {featureSelection === "storylines" && (
+                                    <>
+                                        <div className="feature-description">
+                                            <span className="feature-lead-text">Emergent Storylines: </span>
+                                            <span>While the main cast of characters will remain the same, everything else is up to change. The world and its events cannot be forseen, and the world itself will even react to your very motives and desires.</span>
+                                        </div>
+                                        <CaretButton text="DISCOVER MORE" />
+                                    </>
+                                )}
+                                {featureSelection === "morality" && (
+                                    <>
+                                        <div className="feature-description">
+                                            <span className="feature-lead-text">Conqueror or Nurturer: </span>
+                                            <span>How will you be remembered? As a conqueror who struck down the wilderness around you, and brought an end to nature's grasp on the world? Or as a nurturer whose empire became one with nature, and found a means to live together?</span>
+                                        </div>
+                                        <CaretButton text="DISCOVER MORE" />
+                                    </>
+                                )}
+                            </div>
+                        </div>
+                        <div className="feature-arc-buffer" onMouseEnter={(e) => updateFeatureHoverBuffer(true)} onMouseLeave={(e) => updateFeatureHoverBuffer(false)}/>
                     </div>
-                    <div className="features-description">
-                        <span className="features-lead-text">From Nomads to Empire: </span>
-                        <span>Lead your group of nomads out of the swamps and build your empire. Upgrade buildings to improve technologies and troops, negotiate with others to establish trade routes and obtain resources, and conquer lands to grow your presence.</span>
-                    </div>
-                    <div className="features-description">
-                        <span className="features-lead-text">Engaging Characters: </span>
-                        <span>At the center of your journey are a small band of key characters: Tadhg the chief and demi-god, Cormac the hulking military leader, Alastar the arcanist and druid, Moira the builder and explosives expert, and Saoirse the wildcard and jokester. Each with their own play styles, personalities, and storylines.</span>
-                    </div>
-                    <div className="features-description">
-                        <span className="features-lead-text">Emergent Storylines: </span>
-                        <span>While the main cast of characters will remain the same, everything else is up to change. The world and its events cannot be forseen, and the world itself will even react to your very motives and desires.</span>
-                    </div>
-                    <div className="features-description">
-                        <span className="features-lead-text">Conqueror or Nurturer: </span>
-                        <span>How will you be remembered? As a conqueror who struck down the wilderness around you, and brought an end to nature's grasp on the world? Or as a nurturer whose empire became one with nature, and found a means to live together?</span>
-                    </div>
-                </div>
+                </div> 
                 <div className="newsletter-section">
                     <div className="newsletter-header">Newsletter</div>
                     <div className="newsletter-description">Want to keep yourself up to date with the latest news and updates? Then subscribe to our monthly newsletter, and get all of the information you need in one easy location!</div>
