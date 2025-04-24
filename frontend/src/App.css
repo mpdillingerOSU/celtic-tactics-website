@@ -7,6 +7,11 @@
     --standard-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+@font-face {
+    font-family: celticGaramond;
+    src: url("fonts/celticGaramond.TTF");
+}
+
 .app {
     height: 100vh;
     text-align: left;
@@ -254,6 +259,7 @@
 }
 
 .game-trailer-header {
+    font-family: celticGaramond;
     font-size: 48px;
     font-weight: 700;
     color: rgb(148, 75, 19);
@@ -285,6 +291,7 @@
 }
 
 .features-header {
+    font-family: celticGaramond;
     font-size: 40px;
     font-weight: 700;
     color: rgb(148, 75, 19);
@@ -436,6 +443,7 @@
 }
 
 .newsletter-header {
+    font-family: celticGaramond;
     font-size: 40px;
     font-weight: 700;
     color: rgb(148, 75, 19);
@@ -468,6 +476,7 @@
 }
 
 .ost-header {
+    font-family: celticGaramond;
     font-size: 40px;
     font-weight: 700;
     color: rgb(148, 75, 19);
@@ -540,6 +549,7 @@
 }
 
 .shop-header {
+    font-family: celticGaramond;
     font-size: 40px;
     font-weight: 700;
     color: rgb(148, 75, 19);
