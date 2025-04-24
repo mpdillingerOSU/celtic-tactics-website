@@ -135,7 +135,7 @@ function WelcomePage() {
                                     <>
                                         <div className="feature-description">
                                             <span className="feature-lead-text">From Nomads to Empire: </span>
-                                            <span>Lead your group of nomads out of the swamps and build your empire. Upgrade buildings to improve technologies and troops, negotiate with others to establish trade routes and obtain resources, and conquer lands to spread your influence.</span>
+                                            <span>Lead your group of nomads out of the swamps and build your empire. Upgrade buildings to improve technologies and troops. Negotiate with others to establish trade routes and obtain resources. Conquer lands to grow your presence, and spread your influence.</span>
                                         </div>
                                         <CaretButton text="DISCOVER MORE" />
                                     </>
@@ -144,7 +144,7 @@ function WelcomePage() {
                                     <>
                                         <div className="feature-description">
                                             <span className="feature-lead-text">Engaging Characters: </span>
-                                            <span>At the center of your journey is a small band of key characters: Tadhg the chief and demi-god, Cormac the hulking military commander, Alastar the arcanist and druid, Moira the builder and explosives expert, and Saoirse the wildcard and jokester. Each with their own play styles, personalities, and storylines.</span>
+                                            <span>At the center of your journey is a small band of key characters, each with their own play styles, personalities, and storylines: Tadhg the chief and demi-god, Cormac the hulking military commander, Alastar the arcanist and druid, Moira the builder and explosives expert, and Saoirse the wildcard and jokester.</span>
                                         </div>
                                         <CaretButton text="DISCOVER MORE" />
                                     </>
@@ -153,7 +153,7 @@ function WelcomePage() {
                                     <>
                                         <div className="feature-description">
                                             <span className="feature-lead-text">Emergent Storylines: </span>
-                                            <span>While the main cast of characters will remain the same, everything else is up to change. The world and its events cannot be forseen, and the world itself will even react to your very motives and desires.</span>
+                                            <span>While the main cast of characters will remain the same every playthrough, everything else is up to change. The world and its events cannot be forseen, and the world itself will even react to your very motives and desires.</span>
                                         </div>
                                         <CaretButton text="DISCOVER MORE" />
                                     </>
@@ -162,7 +162,7 @@ function WelcomePage() {
                                     <>
                                         <div className="feature-description">
                                             <span className="feature-lead-text">Conqueror or Nurturer: </span>
-                                            <span>How will you be remembered? As a conqueror who struck down the wilderness around you, and brought an end to nature's grasp on the world? Or as a nurturer whose empire became one with nature, and found a means to live together?</span>
+                                            <span>How will you be remembered? As a conqueror who struck down the wilderness around you, and brought an end to Nature's grasp on the world? Or as a nurturer whose empire became one with Nature, and found a means to live together?</span>
                                         </div>
                                         <CaretButton text="DISCOVER MORE" />
                                     </>
