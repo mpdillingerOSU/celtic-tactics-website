@@ -88,7 +88,9 @@ function WelcomePage() {
                     <img className="game-trailer-mockup" src={require("../images/game-trailer-mockup.png")} alt="game trailer mockup" />
                 </div>
                 <div className="features-section">
-                    <div className="features-header">Features</div>
+                    <div className="section-header-container">
+                        <div className="section-header">Features</div>
+                    </div>
                     <div className="feature-arc-container">
                         <div className="feature-arc" onMouseEnter={(e) => updateFeatureHoverArc(true)} onMouseLeave={(e) => updateFeatureHoverArc(false)}>
                             <div className={"feature-icon-container" + (featureSelection === "combat" ? " selected-feature" : "")} onMouseEnter={(e) => openFeatureInfo("combat")}>
@@ -171,21 +173,29 @@ function WelcomePage() {
                     </div>
                 </div> 
                 <div className="newsletter-section">
-                    <div className="newsletter-header">Newsletter</div>
+                    <div className="section-header-container">
+                        <div className="section-header">Newsletter</div>
+                    </div>
                     <div className="newsletter-description">Want to keep yourself up to date with the latest news and updates? Then subscribe to our monthly newsletter, and get all of the information you need in one easy location!</div>
                     <button className="newsletter-button">
                         SUBSCRIBE NOW
                     </button>
                 </div>
                 <div className="ost-section">
-                    <div className="ost-header">Enjoy our beautiful soundtrack!</div>
+                    <div className="section-header-container">
+                        <div className="section-header">Soundtrack</div>
+                    </div>
+                    <div className="section-subheader">Enjoy our beautiful soundtrack!</div>
                     <img className="ost-mockup" src={require("../images/ost-mockup.png")} alt="ost mockup" />
                     <button className="ost-button">
                         LISTEN TO MORE
                     </button>
                 </div>
                 <div className="shop-section">
-                    <div className="shop-header">Checkout our merch!</div>
+                    <div className="section-header-container">
+                        <div className="section-header">Merch</div>
+                    </div>
+                    <div className="section-subheader">Check out all of our merch! From t-shirts to phone cases, and so much more!</div>
                     <div className="shop-row">
                         <img className="shop-img" src={require("../images/shop-img.png")} alt="shop image" />
                         <button className="shop-button">
