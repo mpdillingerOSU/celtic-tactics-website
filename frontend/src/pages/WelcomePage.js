@@ -135,7 +135,7 @@ function WelcomePage() {
                                     <>
                                         <div className="feature-description">
                                             <span className="feature-lead-text">From Nomads to Empire: </span>
-                                            <span>Lead your group of nomads out of the swamps and build your empire. Upgrade buildings to improve technologies and troops, negotiate with others to establish trade routes and obtain resources, and conquer lands to grow your presence.</span>
+                                            <span>Lead your group of nomads out of the swamps and build your empire. Upgrade buildings to improve technologies and troops, negotiate with others to establish trade routes and obtain resources, and conquer lands to spread your influence.</span>
                                         </div>
                                         <CaretButton text="DISCOVER MORE" />
                                     </>
