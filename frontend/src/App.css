@@ -291,7 +291,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 80px 0 54px 0;
+    padding: 80px 0 128px 0;
 }
 
 .game-trailer-header {
@@ -323,7 +323,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0 0 96px 0;
+    padding: 128px 0 128px 0;
+    border-top: dashed 6px rgba(148, 75, 19, 0.25);
 }
 
 .feature-arc {
@@ -461,7 +462,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0 0 120px 0;
+    padding: 128px 0 128px 0;
+    border-top: dashed 6px rgba(148, 75, 19, 0.25);
 }
 
 .newsletter-description {
@@ -480,7 +482,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0 0 120px 0;
+    padding: 128px 0 128px 0;
+    border-top: dashed 6px rgba(148, 75, 19, 0.25);
 }
 
 .ost-mockup {
@@ -539,7 +542,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0 0 128px 0;
+    padding: 128px 0 128px 0;
+    border-top: dashed 6px rgba(148, 75, 19, 0.25);
 }
 
 .shop-row {
