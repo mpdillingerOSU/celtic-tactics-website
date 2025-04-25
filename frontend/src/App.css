@@ -761,7 +761,7 @@
 .marginalia-img {
     height: 100%;
     object-fit: cover;
-    opacity: 70%;
+    opacity: 75%;
     filter: blur(8px);
     -webkit-filter: blur(0.6px);
 }
