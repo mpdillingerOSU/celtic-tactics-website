@@ -91,7 +91,9 @@ function WelcomePage() {
                         <img className="marginalia-img" src={require("../images/monsters/puc.png")} alt="puc" />
                     </div>
                     <div className="game-trailer-header">DISCOVER ANCIENT LANDS AND BATTLE MONSTERS OF CELTIC LORE</div>
-                    <img className="game-trailer-mockup" src={require("../images/game-trailer-mockup.png")} alt="game trailer mockup" />
+                    <div className="game-trailer-container">
+                        <img className="game-trailer-mockup" src={require("../images/game-trailer-mockup.png")} alt="game trailer mockup" />
+                    </div>
                 </div>
                 <div className="features-section">
                     <div className="marginalia-container cu-sith-container">

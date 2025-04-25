@@ -314,12 +314,24 @@
     background-clip: text;
 }
 
-.game-trailer-mockup {
+.game-trailer-container {
     aspect-ratio: 16 / 9;
     width: 50%;
+    background-image: url("images/game-trailer-container.png");
+    background-size: cover;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.game-trailer-mockup {
+    aspect-ratio: 16 / 9;
+    width: 90%;
     object-fit: contain;
     box-shadow: var(--standard-shadow);
     cursor: pointer;
+    background-color: red;
+    margin: auto 0;
 }
 
 .features-section {
