@@ -84,10 +84,28 @@ function WelcomePage() {
             <div className="decorative-divider" />
             <div className="main-content">
                 <div className="game-trailer-section">
+                    <div className="marginalia-container morrigan-container">
+                        <img className="marginalia-img" src={require("../images/monsters/morrigan.png")} alt="morrigan" />
+                    </div>
+                    <div className="marginalia-container puc-container">
+                        <img className="marginalia-img" src={require("../images/monsters/puc.png")} alt="puc" />
+                    </div>
                     <div className="game-trailer-header">DISCOVER ANCIENT LANDS AND BATTLE MONSTERS OF CELTIC LORE</div>
                     <img className="game-trailer-mockup" src={require("../images/game-trailer-mockup.png")} alt="game trailer mockup" />
                 </div>
                 <div className="features-section">
+                    <div className="marginalia-container cu-sith-container">
+                        <img className="marginalia-img" src={require("../images/monsters/cu-sith.png")} alt="cu sith" />
+                    </div>
+                    <div className="marginalia-container wyvern-container">
+                        <img className="marginalia-img" src={require("../images/monsters/wyvern.png")} alt="wyvern" />
+                    </div>
+                    <div className="marginalia-container amphibian-man-container">
+                        <img className="marginalia-img" src={require("../images/monsters/amphibian-man.png")} alt="amphibian man" />
+                    </div>
+                    <div className="marginalia-container kelpie-container">
+                        <img className="marginalia-img" src={require("../images/monsters/kelpie.png")} alt="kelpie" />
+                    </div>
                     <div className="section-header-container">
                         <div className="section-header">Features</div>
                     </div>
@@ -173,6 +191,12 @@ function WelcomePage() {
                     </div>
                 </div> 
                 <div className="newsletter-section">
+                    <div className="marginalia-container wendigo-container">
+                        <img className="marginalia-img" src={require("../images/monsters/wendigo.png")} alt="wendigo" />
+                    </div>
+                    <div className="marginalia-container goblin-container">
+                        <img className="marginalia-img" src={require("../images/monsters/goblin.png")} alt="goblin" />
+                    </div>
                     <div className="section-header-container">
                         <div className="section-header">Newsletter</div>
                     </div>
@@ -182,6 +206,12 @@ function WelcomePage() {
                     </button>
                 </div>
                 <div className="ost-section">
+                    <div className="marginalia-container merrow-container">
+                        <img className="marginalia-img" src={require("../images/monsters/merrow.png")} alt="merrow" />
+                    </div>
+                    <div className="marginalia-container fomorian-container">
+                        <img className="marginalia-img" src={require("../images/monsters/fomorian.png")} alt="fomorian" />
+                    </div>
                     <div className="section-header-container">
                         <div className="section-header">Soundtrack</div>
                     </div>
@@ -192,6 +222,12 @@ function WelcomePage() {
                     </button>
                 </div>
                 <div className="shop-section">
+                    <div className="marginalia-container forest-spirit-container">
+                        <img className="marginalia-img" src={require("../images/monsters/forest-spirit.png")} alt="forest spirit" />
+                    </div>
+                    <div className="marginalia-container werewolf-container">
+                        <img className="marginalia-img" src={require("../images/monsters/werewolf.png")} alt="werewolf" />
+                    </div>
                     <div className="section-header-container">
                         <div className="section-header">Merch</div>
                     </div>
