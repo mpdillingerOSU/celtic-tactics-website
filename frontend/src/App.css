@@ -285,6 +285,7 @@
 }
 
 .game-trailer-section {
+    position: relative;
     width: 100%;
     height: fit-content;
     display: flex;
@@ -317,6 +318,7 @@
 }
 
 .features-section {
+    position: relative;
     width: 100%;
     height: fit-content;
     display: flex;
@@ -456,6 +458,7 @@
 }
 
 .newsletter-section {
+    position: relative;
     width: 100%;
     height: fit-content;
     display: flex;
@@ -476,6 +479,7 @@
 }
 
 .ost-section {
+    position: relative;
     width: 100%;
     height: fit-content;
     display: flex;
@@ -536,6 +540,7 @@
 }
 
 .shop-section {
+    position: relative;
     width: 100%;
     height: fit-content;
     display: flex;
@@ -755,6 +760,86 @@
     margin-top: 12px;
     text-align: center;
     font-size: 16px;
+}
+
+.marginalia-img {
+    height: 100%;
+    object-fit: cover;
+    opacity: 70%;
+}
+
+.marginalia-container {
+    position: absolute;
+    height: 25vh;
+}
+
+.morrigan-container {
+    top: 32%;
+    left: -2%;
+}
+
+.puc-container {
+    bottom: 2%;
+    right: -1%;
+    height: 35vh;
+}
+
+.cu-sith-container {
+    top: 7%;
+    left: -1%;
+}
+
+.wyvern-container {
+    top: 20%;
+    right: -1%;
+    height: 40vh;
+}
+
+.amphibian-man-container {
+    bottom: 10%;
+    right: -2%;
+    -webkit-transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.kelpie-container {
+    bottom: 3%;
+    left: -2%;
+}
+
+.goblin-container {
+    top: 7%;
+    right: -1%;
+}
+
+.wendigo-container {
+    bottom: 7%;
+    left: -3%;
+    height: 40vh;
+}
+
+.merrow-container {
+    top: 20%;
+    left: -1%;
+    height: 30vh;
+}
+
+.fomorian-container {
+    bottom: 12%;
+    right: -1%;
+    height: 30vh;
+}
+
+.forest-spirit-container {
+    top: 12%;
+    left: 10%;
+}
+
+.werewolf-container {
+    top: 12%;
+    right: 10%;
 }
 
 
