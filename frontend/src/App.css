@@ -783,6 +783,10 @@
     -webkit-filter: blur(0.6px);
 }
 
+.marginalia-writing {
+    opacity: 85%;
+}
+
 .marginalia-container {
     position: absolute;
     height: 25vh;
@@ -793,7 +797,7 @@
     left: -2%;
 }
 
-.puc-container {
+.pattern-flowers-container {
     bottom: 2%;
     right: -1%;
     height: 35vh;
@@ -810,9 +814,16 @@
     height: 40vh;
 }
 
-.amphibian-man-container {
-    bottom: 10%;
-    right: -2%;
+.text-pattern-1-container {
+    bottom: 40%;
+    left: -1%;
+    height: 35vh;
+}
+
+.pattern-strawberries-container {
+    bottom: 2%;
+    left: -1%;
+    height: 35vh;
     -webkit-transform: scaleX(-1);
     -moz-transform: scaleX(-1);
     -o-transform: scaleX(-1);
@@ -821,10 +832,14 @@
 
 .kelpie-container {
     bottom: 3%;
-    left: -2%;
+    right: -2%;
+    -webkit-transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1);
 }
 
-.goblin-container {
+.eyeball-text-container {
     top: 7%;
     right: -1%;
 }
@@ -845,6 +860,12 @@
     bottom: 12%;
     right: -1%;
     height: 30vh;
+}
+
+.text-pattern-2-container {
+    top: 9%;
+    right: 1%;
+    height: 35vh;
 }
 
 .forest-spirit-container {

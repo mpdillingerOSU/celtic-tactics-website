@@ -85,10 +85,10 @@ function WelcomePage() {
             <div className="main-content">
                 <div className="game-trailer-section">
                     <div className="marginalia-container morrigan-container">
-                        <img className="marginalia-img" src={require("../images/monsters/morrigan.png")} alt="morrigan" />
+                        <img className="marginalia-img" src={require("../images/marginalia/morrigan.png")} alt="morrigan" />
                     </div>
-                    <div className="marginalia-container puc-container">
-                        <img className="marginalia-img" src={require("../images/monsters/puc.png")} alt="puc" />
+                    <div className="marginalia-container pattern-flowers-container">
+                        <img className="marginalia-img" src={require("../images/marginalia/pattern-flowers.png")} alt="flower pattern" />
                     </div>
                     <div className="game-trailer-header">DISCOVER ANCIENT LANDS AND BATTLE MONSTERS OF CELTIC LORE</div>
                     <div className="game-trailer-container">
@@ -97,16 +97,19 @@ function WelcomePage() {
                 </div>
                 <div className="features-section">
                     <div className="marginalia-container cu-sith-container">
-                        <img className="marginalia-img" src={require("../images/monsters/cu-sith.png")} alt="cu sith" />
+                        <img className="marginalia-img" src={require("../images/marginalia/cu-sith.png")} alt="cu sith" />
                     </div>
                     <div className="marginalia-container wyvern-container">
-                        <img className="marginalia-img" src={require("../images/monsters/wyvern.png")} alt="wyvern" />
+                        <img className="marginalia-img" src={require("../images/marginalia/wyvern.png")} alt="wyvern" />
                     </div>
-                    <div className="marginalia-container amphibian-man-container">
-                        <img className="marginalia-img" src={require("../images/monsters/amphibian-man.png")} alt="amphibian man" />
+                    <div className="marginalia-container text-pattern-1-container">
+                        <img className="marginalia-img marginalia-writing" src={require("../images/marginalia/text-pattern-1.png")} alt="text pattern" />
+                    </div>
+                    <div className="marginalia-container pattern-strawberries-container">
+                        <img className="marginalia-img" src={require("../images/marginalia/pattern-strawberries.png")} alt="strawberry pattern" />
                     </div>
                     <div className="marginalia-container kelpie-container">
-                        <img className="marginalia-img" src={require("../images/monsters/kelpie.png")} alt="kelpie" />
+                        <img className="marginalia-img" src={require("../images/marginalia/kelpie.png")} alt="kelpie" />
                     </div>
                     <div className="section-header-container">
                         <div className="section-header">Features</div>
@@ -194,10 +197,10 @@ function WelcomePage() {
                 </div> 
                 <div className="newsletter-section">
                     <div className="marginalia-container wendigo-container">
-                        <img className="marginalia-img" src={require("../images/monsters/wendigo.png")} alt="wendigo" />
+                        <img className="marginalia-img" src={require("../images/marginalia/wendigo.png")} alt="wendigo" />
                     </div>
-                    <div className="marginalia-container goblin-container">
-                        <img className="marginalia-img" src={require("../images/monsters/goblin.png")} alt="goblin" />
+                    <div className="marginalia-container eyeball-text-container">
+                        <img className="marginalia-img" src={require("../images/marginalia/eyeball-text.png")} alt="eyeball with text" />
                     </div>
                     <div className="section-header-container">
                         <div className="section-header">Newsletter</div>
@@ -209,10 +212,13 @@ function WelcomePage() {
                 </div>
                 <div className="ost-section">
                     <div className="marginalia-container merrow-container">
-                        <img className="marginalia-img" src={require("../images/monsters/merrow.png")} alt="merrow" />
+                        <img className="marginalia-img" src={require("../images/marginalia/merrow.png")} alt="merrow" />
                     </div>
                     <div className="marginalia-container fomorian-container">
-                        <img className="marginalia-img" src={require("../images/monsters/fomorian.png")} alt="fomorian" />
+                        <img className="marginalia-img" src={require("../images/marginalia/fomorian.png")} alt="fomorian" />
+                    </div>
+                    <div className="marginalia-container text-pattern-2-container">
+                        <img className="marginalia-img marginalia-writing" src={require("../images/marginalia/text-pattern-3.png")} alt="text pattern" />
                     </div>
                     <div className="section-header-container">
                         <div className="section-header">Soundtrack</div>
@@ -225,10 +231,10 @@ function WelcomePage() {
                 </div>
                 <div className="shop-section">
                     <div className="marginalia-container forest-spirit-container">
-                        <img className="marginalia-img" src={require("../images/monsters/forest-spirit.png")} alt="forest spirit" />
+                        <img className="marginalia-img" src={require("../images/marginalia/forest-spirit.png")} alt="forest spirit" />
                     </div>
                     <div className="marginalia-container werewolf-container">
-                        <img className="marginalia-img" src={require("../images/monsters/werewolf.png")} alt="werewolf" />
+                        <img className="marginalia-img" src={require("../images/marginalia/werewolf.png")} alt="werewolf" />
                     </div>
                     <div className="section-header-container">
                         <div className="section-header">Merch</div>
