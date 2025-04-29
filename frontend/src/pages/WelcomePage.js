@@ -7,6 +7,7 @@ import { GiBarbute } from "react-icons/gi";
 import { GiFluffyTrefoil } from "react-icons/gi";
 import { FaBalanceScale } from "react-icons/fa";
 import CaretButton from '../components/CaretButton';
+import Marginalia from '../components/Marginalia';
 
 function WelcomePage() {
     const [isPurchaseRowFixed, setIsPurchaseRowFixed] = useState(false);
@@ -84,33 +85,19 @@ function WelcomePage() {
             <div className="decorative-divider" />
             <div className="main-content">
                 <div className="game-trailer-section">
-                    <div className="marginalia-container morrigan-container">
-                        <img className="marginalia-img" src={require("../images/marginalia/morrigan.png")} alt="morrigan" />
-                    </div>
-                    <div className="marginalia-container pattern-flowers-container">
-                        <img className="marginalia-img" src={require("../images/marginalia/pattern-flowers.png")} alt="flower pattern" />
-                    </div>
+                    <Marginalia imgSrc={require("../images/marginalia/morrigan.png")} alt={"morrigan"} height={"25vh"} top={"32%"} left={"-2%"} />
+                    <Marginalia imgSrc={require("../images/marginalia/pattern-flowers.png")} alt={"flower pattern"} height={"35vh"} bottom={"2%"} right={"-1%"} />
                     <div className="game-trailer-header">DISCOVER ANCIENT LANDS AND BATTLE MONSTERS OF CELTIC LORE</div>
                     <div className="game-trailer-container">
                         <img className="game-trailer-mockup" src={require("../images/game-trailer-mockup.png")} alt="game trailer mockup" />
                     </div>
                 </div>
                 <div className="features-section">
-                    <div className="marginalia-container cu-sith-container">
-                        <img className="marginalia-img" src={require("../images/marginalia/cu-sith.png")} alt="cu sith" />
-                    </div>
-                    <div className="marginalia-container wyvern-container">
-                        <img className="marginalia-img" src={require("../images/marginalia/wyvern.png")} alt="wyvern" />
-                    </div>
-                    <div className="marginalia-container text-pattern-1-container">
-                        <img className="marginalia-img marginalia-writing" src={require("../images/marginalia/text-pattern-1.png")} alt="text pattern" />
-                    </div>
-                    <div className="marginalia-container pattern-strawberries-container">
-                        <img className="marginalia-img" src={require("../images/marginalia/pattern-strawberries.png")} alt="strawberry pattern" />
-                    </div>
-                    <div className="marginalia-container kelpie-container">
-                        <img className="marginalia-img" src={require("../images/marginalia/kelpie.png")} alt="kelpie" />
-                    </div>
+                    <Marginalia imgSrc={require("../images/marginalia/cu-sith.png")} alt={"cu sith"} height={"25vh"} top={"7%"} left={"-1%"} />
+                    <Marginalia imgSrc={require("../images/marginalia/wyvern.png")} alt={"wyvern"} height={"40vh"} top={"20%"} right={"-1%"} />
+                    <Marginalia imgSrc={require("../images/marginalia/text-pattern-1.png")} alt={"text pattern"} height={"35vh"} bottom={"40%"} left={"-1%"} opacity={"85%"} />
+                    <Marginalia imgSrc={require("../images/marginalia/pattern-strawberries.png")} alt={"strawberry pattern"} height={"35vh"} bottom={"2%"} left={"-1%"} mirrorX={true} />
+                    <Marginalia imgSrc={require("../images/marginalia/kelpie.png")} alt={"kelpie"} height={"25vh"} bottom={"3%"} right={"-2%"} mirrorX={true} />
                     <div className="section-header-container">
                         <div className="section-header">Features</div>
                     </div>
@@ -196,12 +183,8 @@ function WelcomePage() {
                     </div>
                 </div> 
                 <div className="newsletter-section">
-                    <div className="marginalia-container wendigo-container">
-                        <img className="marginalia-img" src={require("../images/marginalia/wendigo.png")} alt="wendigo" />
-                    </div>
-                    <div className="marginalia-container eyeball-text-container">
-                        <img className="marginalia-img" src={require("../images/marginalia/eyeball-text.png")} alt="eyeball with text" />
-                    </div>
+                    <Marginalia imgSrc={require("../images/marginalia/wendigo.png")} alt={"wendigo"} height={"40vh"} bottom={"7%"} left={"-3%"} />
+                    <Marginalia imgSrc={require("../images/marginalia/eyeball-text.png")} alt={"eyeball with text"} height={"25vh"} top={"7%"} right={"-1%"} />
                     <div className="section-header-container">
                         <div className="section-header">Newsletter</div>
                     </div>
@@ -211,15 +194,9 @@ function WelcomePage() {
                     </button>
                 </div>
                 <div className="ost-section">
-                    <div className="marginalia-container merrow-container">
-                        <img className="marginalia-img" src={require("../images/marginalia/merrow.png")} alt="merrow" />
-                    </div>
-                    <div className="marginalia-container fomorian-container">
-                        <img className="marginalia-img" src={require("../images/marginalia/fomorian.png")} alt="fomorian" />
-                    </div>
-                    <div className="marginalia-container text-pattern-2-container">
-                        <img className="marginalia-img marginalia-writing" src={require("../images/marginalia/text-pattern-3.png")} alt="text pattern" />
-                    </div>
+                    <Marginalia imgSrc={require("../images/marginalia/merrow.png")} alt={"merrow"} height={"30vh"} top={"20%"} left={"-1%"} />
+                    <Marginalia imgSrc={require("../images/marginalia/fomorian.png")} alt={"fomorian"} height={"30vh"} bottom={"12%"} right={"-1%"} />
+                    <Marginalia imgSrc={require("../images/marginalia/text-pattern-3.png")} alt={"text pattern"} height={"35vh"} top={"9%"} right={"1%"} opacity={"85%"} />
                     <div className="section-header-container">
                         <div className="section-header">Soundtrack</div>
                     </div>
@@ -230,12 +207,8 @@ function WelcomePage() {
                     </button>
                 </div>
                 <div className="shop-section">
-                    <div className="marginalia-container forest-spirit-container">
-                        <img className="marginalia-img" src={require("../images/marginalia/forest-spirit.png")} alt="forest spirit" />
-                    </div>
-                    <div className="marginalia-container werewolf-container">
-                        <img className="marginalia-img" src={require("../images/marginalia/werewolf.png")} alt="werewolf" />
-                    </div>
+                    <Marginalia imgSrc={require("../images/marginalia/forest-spirit.png")} alt={"forest spirit"} height={"25vh"} top={"12%"} left={"10%"} />
+                    <Marginalia imgSrc={require("../images/marginalia/werewolf.png")} alt={"werewolf"} height={"25vh"} top={"12%"} right={"10%"} />
                     <div className="section-header-container">
                         <div className="section-header">Merch</div>
                     </div>
