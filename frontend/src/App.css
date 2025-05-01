@@ -516,7 +516,7 @@
 .screenshot-rotate-button {
     width: 48px;
     height: 48px;
-    background-color: rgb(242, 192, 116);
+    background-color: rgba(223, 163, 72, 0.4);
     border: solid 3.5px rgb(119, 59, 12);
     border-radius: 50%;
     display: inline-block;
