@@ -208,19 +208,19 @@ function WelcomePage() {
                     </div>
                     <div className="screenshot-carousel">
                         <button className={"carouseled-screenshot-container" + (selectedScreenshot === 0 ? " selected-carouseled-screenshot" : "")} onClick={(e) => setScreenshot(e, 0)}>
-                            <img className="screenshot" src={require("../images/screenshots/screenshot-1.png")} alt="game screenshot" />
+                            <img className="screenshot" src={require("../images/screenshots/screenshot-0.png")} alt="game screenshot" />
                         </button>
                         <button className={"carouseled-screenshot-container" + (selectedScreenshot === 1 ? " selected-carouseled-screenshot" : "")} onClick={(e) => setScreenshot(e, 1)}>
-                            <img className="screenshot" src={require("../images/screenshots/screenshot-2.png")} alt="game screenshot" />
+                            <img className="screenshot" src={require("../images/screenshots/screenshot-1.png")} alt="game screenshot" />
                         </button>
                         <button className={"carouseled-screenshot-container" + (selectedScreenshot === 2 ? " selected-carouseled-screenshot" : "")} onClick={(e) => setScreenshot(e, 2)}>
-                            <img className="screenshot" src={require("../images/screenshots/screenshot-3.png")} alt="game screenshot" />
+                            <img className="screenshot" src={require("../images/screenshots/screenshot-2.png")} alt="game screenshot" />
                         </button>
                         <button className={"carouseled-screenshot-container" + (selectedScreenshot === 3 ? " selected-carouseled-screenshot" : "")} onClick={(e) => setScreenshot(e, 3)}>
-                            <img className="screenshot" src={require("../images/screenshots/screenshot-4.png")} alt="game screenshot" />
+                            <img className="screenshot" src={require("../images/screenshots/screenshot-3.png")} alt="game screenshot" />
                         </button>
                         <button className={"carouseled-screenshot-container" + (selectedScreenshot === 4 ? " selected-carouseled-screenshot" : "")} onClick={(e) => setScreenshot(e, 4)}>
-                            <img className="screenshot" src={require("../images/screenshots/screenshot-5.png")} alt="game screenshot" />
+                            <img className="screenshot" src={require("../images/screenshots/screenshot-4.png")} alt="game screenshot" />
                         </button>
                     </div>
                 </div>
