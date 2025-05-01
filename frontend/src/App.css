@@ -570,8 +570,16 @@
     cursor: pointer;
 }
 
+.carouseled-screenshot-container:hover {
+    filter: brightness(65%);
+}
+
 .selected-carouseled-screenshot {
     filter: brightness(80%);
+}
+
+.selected-carouseled-screenshot:hover {
+    filter: brightness(90%);
 }
 
 .newsletter-section {
