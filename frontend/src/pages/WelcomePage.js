@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import PurchaseRow from '../components/PurchaseRow';
-import { FaCaretUp } from 'react-icons/fa';
+import { FaAngleLeft, FaAngleRight, FaCaretUp } from 'react-icons/fa';
 import { RiSwordFill } from "react-icons/ri";
 import { FaCrown } from "react-icons/fa6";
 import { GiBarbute } from "react-icons/gi";
@@ -8,6 +8,7 @@ import { GiFluffyTrefoil } from "react-icons/gi";
 import { FaBalanceScale } from "react-icons/fa";
 import CaretButton from '../components/CaretButton';
 import Marginalia from '../components/Marginalia';
+import { screenshotData } from '../data/ScreenshotData';
 
 function WelcomePage() {
     const [isPurchaseRowFixed, setIsPurchaseRowFixed] = useState(false);
@@ -15,6 +16,7 @@ function WelcomePage() {
     const [isHoveringFeatureArc, setIsHoveringFeatureArc] = useState(false);
     const [isHoveringFeatureBuffer, setIsHoveringFeatureBuffer] = useState(false);
     const [featureSelection, setFeatureSelection] = useState();
+    const [selectedScreenshot, setSelectedScreenshot] = useState(0);
 
     function isPurchaseRowOffScreen() {
         const element = document.getElementById("purchase-row");
@@ -69,6 +71,11 @@ function WelcomePage() {
             setFeatureSelection();
         }
     }, [isHoveringFeatureArc, isHoveringFeatureBuffer]);
+
+    function setScreenshot(e, val){
+        e.preventDefault();
+        setSelectedScreenshot(val);
+    }
 
     return (
         <div id="welcome-page">
@@ -181,7 +188,42 @@ function WelcomePage() {
                         </div>
                         <div className="feature-arc-buffer" onMouseEnter={(e) => updateFeatureHoverBuffer(true)} onMouseLeave={(e) => updateFeatureHoverBuffer(false)}/>
                     </div>
-                </div> 
+                </div>
+                <div className="screenshots-section">
+                    <Marginalia imgSrc={require("../images/marginalia/wendigo.png")} alt={"wendigo"} height={"40vh"} bottom={"7%"} left={"-3%"} />
+                    <Marginalia imgSrc={require("../images/marginalia/eyeball-text.png")} alt={"eyeball with text"} height={"25vh"} top={"7%"} right={"-1%"} />
+                    <div className="section-header-container">
+                        <div className="section-header">Screenshots</div>
+                    </div>
+                    <div className="screenshot-row">
+                        <button className="screenshot-rotate-button" onClick={(e) => setScreenshot(e, selectedScreenshot === 0 ? screenshotData.length - 1 : selectedScreenshot - 1)}>
+                            <FaAngleLeft className="icon align-left"/>
+                        </button>
+                        <div className="selected-screenshot-container">
+                            <img className="screenshot" src={screenshotData[selectedScreenshot]} alt="game screenshot" />
+                        </div>
+                        <button className="screenshot-rotate-button" onClick={(e) => setScreenshot(e, (selectedScreenshot + 1) % screenshotData.length)}>
+                            <FaAngleRight className="icon align-right" />
+                        </button>
+                    </div>
+                    <div className="screenshot-carousel">
+                        <button className={"carouseled-screenshot-container" + (selectedScreenshot === 0 ? " selected-carouseled-screenshot" : "")} onClick={(e) => setScreenshot(e, 0)}>
+                            <img className="screenshot" src={require("../images/screenshots/screenshot-1.png")} alt="game screenshot" />
+                        </button>
+                        <button className={"carouseled-screenshot-container" + (selectedScreenshot === 1 ? " selected-carouseled-screenshot" : "")} onClick={(e) => setScreenshot(e, 1)}>
+                            <img className="screenshot" src={require("../images/screenshots/screenshot-2.png")} alt="game screenshot" />
+                        </button>
+                        <button className={"carouseled-screenshot-container" + (selectedScreenshot === 2 ? " selected-carouseled-screenshot" : "")} onClick={(e) => setScreenshot(e, 2)}>
+                            <img className="screenshot" src={require("../images/screenshots/screenshot-3.png")} alt="game screenshot" />
+                        </button>
+                        <button className={"carouseled-screenshot-container" + (selectedScreenshot === 3 ? " selected-carouseled-screenshot" : "")} onClick={(e) => setScreenshot(e, 3)}>
+                            <img className="screenshot" src={require("../images/screenshots/screenshot-4.png")} alt="game screenshot" />
+                        </button>
+                        <button className={"carouseled-screenshot-container" + (selectedScreenshot === 4 ? " selected-carouseled-screenshot" : "")} onClick={(e) => setScreenshot(e, 4)}>
+                            <img className="screenshot" src={require("../images/screenshots/screenshot-5.png")} alt="game screenshot" />
+                        </button>
+                    </div>
+                </div>
                 <div className="newsletter-section">
                     <Marginalia imgSrc={require("../images/marginalia/wendigo.png")} alt={"wendigo"} height={"40vh"} bottom={"7%"} left={"-3%"} />
                     <Marginalia imgSrc={require("../images/marginalia/eyeball-text.png")} alt={"eyeball with text"} height={"25vh"} top={"7%"} right={"-1%"} />

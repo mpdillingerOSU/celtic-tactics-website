@@ -474,6 +474,109 @@
     height: 50px;
 }
 
+.screenshots-section {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 128px 0 128px 0;
+    border-top: dashed 6px rgba(148, 75, 19, 0.25);
+}
+
+.screenshot-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 56px;
+  }
+
+.selected-screenshot-container {
+    width: calc(40vw + 8px) /*8px is the padding*/;
+    height: calc(40vw * 2 / 3 + 8px) /*8px is the padding*/;
+    margin-top: 12px;
+    box-shadow: var(--standard-shadow);
+    padding: 8px;
+    background-color: white;
+}
+
+.screenshot {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.screenshot-rotate-button {
+    width: 48px;
+    height: 48px;
+    background-color: rgb(242, 192, 116);
+    border: solid 3.5px rgb(119, 59, 12);
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    box-shadow: var(--standard-shadow);
+  }
+
+  .screenshot-rotate-button .icon {
+    height: 32px;
+    width: 32px;
+    font-size: 32px;
+    color: rgb(148, 75, 19);
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .screenshot-rotate-button:hover {
+    background-color: lightgrey;
+  }
+  
+  .screenshot-rotate-button .icon {
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.screenshot-carousel {
+    position: relative;
+    margin-top: 42px;
+    width: 70vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.carouseled-screenshot-container {
+    width: calc(12vw + 6px); /*6px is the padding*/
+    height: calc(12vw * 2 / 3 + 6px); /*6px is the padding*/
+    margin-top: 12px 0 0 0;
+    padding: 0;
+    border: none;
+    box-shadow: var(--standard-shadow);
+    padding: 6px;
+    background-color: white;
+    filter: brightness(40%);
+    cursor: pointer;
+}
+
+.selected-carouseled-screenshot {
+    filter: brightness(80%);
+}
+
 .newsletter-section {
     position: relative;
     width: 100%;
