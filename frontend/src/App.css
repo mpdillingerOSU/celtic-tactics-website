@@ -520,9 +520,9 @@
     display: inline-block;
     cursor: pointer;
     box-shadow: var(--standard-shadow);
-  }
+}
 
-  .screenshot-rotate-button .icon {
+.screenshot-rotate-button .icon {
     height: 32px;
     width: 32px;
     font-size: 32px;
@@ -532,20 +532,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .screenshot-rotate-button:hover {
-    background-color: lightgrey;
-  }
-  
-  .screenshot-rotate-button .icon {
-    font-size: 18px;
-    text-align: center;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+}
+
+.screenshot-rotate-button:hover {
+    background-color: rgb(245, 212, 163);
+    border-color: rgb(151, 84, 33);
+}
+
+.screenshot-rotate-button:hover .icon {
+    color: rgb(185, 106, 46);
+}
+
 
 .screenshot-carousel {
     position: relative;
