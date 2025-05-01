@@ -190,8 +190,8 @@ function WelcomePage() {
                     </div>
                 </div>
                 <div className="screenshots-section">
-                    <Marginalia imgSrc={require("../images/marginalia/wendigo.png")} alt={"wendigo"} height={"40vh"} bottom={"7%"} left={"-3%"} />
-                    <Marginalia imgSrc={require("../images/marginalia/eyeball-text.png")} alt={"eyeball with text"} height={"25vh"} top={"7%"} right={"-1%"} />
+                    <Marginalia imgSrc={require("../images/marginalia/amphibian-man.png")} alt={"amphibian man"} height={"40vh"} bottom={"7%"} left={"-3%"} mirrorX={true}/>
+                    <Marginalia imgSrc={require("../images/marginalia/puc.png")} alt={"puc"} height={"30vh"} top={"7%"} right={"-1%"} />
                     <div className="section-header-container">
                         <div className="section-header">Screenshots</div>
                     </div>
